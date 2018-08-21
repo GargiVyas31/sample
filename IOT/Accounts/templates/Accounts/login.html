@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+</head>
+<body>
+	<p>Login Page</p>
+	<h2>Login Form</h2>
+<form  style="max-width:500px;margin:auto" method = "post"  action="{% url 'accounts:login' %}" >
+    {% csrf_token %}
+    {{ form.as_p }}
+
+
+  <button type="submit" class="btn">Login</button>
+</form>
+
+</body>
+</html>
